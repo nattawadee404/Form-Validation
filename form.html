@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<head>
+    <title>คำร้องขอลาพักการเรียนมหาวิทยาลัยแม่โจ้ | Maejo University</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        body .container {
+            max-width: 960px;
+        }
+
+        /*
+   * Custom translucent site header
+   */
+
+        .site-header {
+            background-color: rgba(185, 57, 57, 0.85);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            backdrop-filter: saturate(180%) blur(20px);
+        }
+
+        .site-header a {
+            color: #2b6439;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+
+        .product-device {
+            position: absolute;
+            right: 10%;
+            bottom: -30%;
+            width: 300px;
+            height: 540px;
+            background-color: #333;
+            border-radius: 21px;
+            transform: rotate(30deg);
+        }
+
+        .product-device::before {
+            position: absolute;
+            top: 10%;
+            right: 10px;
+            bottom: 10%;
+            left: 10px;
+            content: "";
+            background-color: rgba(255, 255, 255, .1);
+            border-radius: 5px;
+        }
+
+        .product-device-2 {
+            top: -25%;
+            right: auto;
+            bottom: 0;
+            left: 5%;
+            background-color: #a01818;
+        }
+    </style>
+    <!-- font -->
+</head>
+<!--loco uni/head-->
+
+<body class="bg-light">
+    <div class="container" style="background-color: rgb(255, 255, 255);">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4"
+                    src="https://i1.wp.com/www.archives.mju.ac.th/web/wp-content/uploads/2015/09/cropped-favicon.png"
+                    alt="" width="150" height="150">
+                <h1>คำร้องขอลาพักการศึกษา</h1>
+                <p>(สําหรับนักศึกษาที่ได้ศึกษามาแล้ว ไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
+            </div>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <!-- วันที่ -->
+            <div class="py-5 text-center">
+                <div class="col">
+                    <h6 style="text-align: right">เขียนที่ มหาวิทยาลัยแม่โจ้</h6><br>
+
+                    <h6 style="text-align:right">เขียนคำร้อง ณ วันที่ <input type="date" required /></h6><br>
+                </div>
+                <!-- ข้อมูลส่วนตัว -->
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <div class="col">
+                    <h6 style="text-align:left"><B>เรื่อง</B> ขอลาพักการศึกษา ในภาคเรียนที่ <input type="number"
+                            name="qaunlity" min="1" max="3" required>
+                        ปีการศึกษาที่ <input type="text" required>
+                    </h6><br>
+                    <h6 style="text-align:left"><B>เรียน</B> คณบดีคณะ <input type="text" name="quanlity" min="1"
+                            max="15" required /></h6><br>
+
+                    <h6 style="text-align:left">
+                        <form>ข้าพเจ้า <input type="radio" name="gender" value="mr" checked>นาย<input type="radio"
+                                name="gender" value="ms">นางสาว <input type="radio" name="gender" value="mrs">นาง
+                            ชื่อ <input type="text" name="name" min="10" max="10" required> นามสกุล <input type="text"
+                                name="name" min="10" max="10" required>
+                        </form>
+                    </h6>
+
+                    <h6 style="text-align: left"><B> รหัสนักศึกษา </B><input type="tel" minlength="10" maxlength="10">
+                        เบอร์โทรศัพท์
+                        (10 หลัก) <input type="tel" minlength="10" maxlength="10"></h6>
+
+                    <h6 style="text-align: left">
+                        <form></input><B> หลักสูตร ปริญญาตรี </B> <input type="radio" name="gender"> 4-5
+                            ปี <input type="radio" name="gender">
+                            4 ปีเทียบเข้าเรียน (2 ปี) <input type="radio" name="gender"> ภาคปกติ <input type="radio"
+                                name="gender">ภาคสมทบ
+                    </h6>
+                    </form>
+
+                    <h6 style="text-align: left"><b> คณะ </b> <input type="text" min="0" max="15" required><b> สาขาวิชา
+                            <input type="text" min="0" max="15" required></b></h6>
+
+                    <h6 style="text-align: left"><b>มีความประสงค์จะขอลาพักการศึกษาเนื่องจาก</b></h6><br>
+                    <textarea name="address" cols="75" rows="10" required> กรอกเหตุผลลงในช่องนี้ </textarea>
+
+                    <h6 style="text-align:left"><b>พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง / ใบรับรองแพทย์ /
+                            เอกสารอื่นๆ
+                            <b></h6>
+
+                    <h6 style="text-align: right"><b>จึงเรียนมาเพื่อโปรดพิจารณา</b></h6>
+                    <h6 style="text-align: right">ขอแสดงความนับถือ( นักศึกษา )<br>
+                        <h6 style="text-align: right">ลงชื่อ <input type="text">
+                            <br></label><label for="avatar">
+                                <h6 style="text-align: right">อัพรูปแสดงหลักฐาน(ลายเซ็น)
+                            </label>
+
+                            <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                        </h6>
+
+                    </h6>
+
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+                    <!-- ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ -->
+                    <div class="col">
+                        <h6 style="text-align:left"><b>ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</b></h6>
+                        <h6 style="text-align:left"><input type="checkbox"> ทราบ
+                            นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้
+                        </h6>
+                        <h6 style="text-align: left">ในภาคเรียนที่ <input type="number" min="1" max="3" required>
+                        </h6>
+                        <h6 style="text-align: right">ลงชื่อ <input type="text"
+                                required><br>หัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
+                            <label for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                            <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                            <br></input>วันที่ <input type="date" required>
+
+                        </h6>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <!-- ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ -->
+                        <div class="col">
+                            <h6 style="text-align:left"><b>ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</b></h6>
+                            <h6 style="text-align: left"><input type="checkbox"> ทราบ</h6>
+                            <h6 style="text-align: right">ลงชื่อ <input
+                                    type="text"><br>ผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ
+                                <br></label><label for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                                <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                                <br></input>วันที่ <input type="date" required>
+
+
+                            </h6>
+                        </div>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <!-- ความเห็นอาจารย์ที่ปรึกษา -->
+                        <div>
+                            <h6 style="text-align:left"><b>ความเห็นอาจารย์ที่ปรึกษา</h6>
+                            <h6 style="text-align: left"><input type="checkbox"> ทราบ</h6>
+                            <h6 style="text-align: right">ลงชื่อ <input type="text"
+                                    required><br><b>ลงชื่ออาจารย์ที่ปรึกษา</b> <br></label><label
+                                    for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                                <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                                <br></input>วันที่ <input type="date" required>
+
+                            </h6>
+                        </div>
+                        <!-- ความเห็นประธานคณะกรรมการประจําหลักสูตร -->
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <div>
+                            <h6 style="text-align:left"><b>ความเห็นประธานคณะกรรมการประจําหลักสูตร</b></h6>
+                            <h6 style="text-align: left"><input type="checkbox"> ทราบ</h6>
+                            <h6 style="text-align: right">ลงชื่อ <input type="text"
+                                    required><br>ลงชื่อประธานคณะกรรมการประจําหลักสูตร
+                                <br></label><label for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                                <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                                <br></input>วันที่ <input type="date" required>
+
+                            </h6>
+                        </div>
+                        <!-- ความเห็นคณบดี -->
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <div>
+                            <h6 style="text-align:left"><b>ความเห็นคณบดี</b></h6>
+                            <h6 style="text-align: left">
+                                <form><input type="radio" name="gender">อณุมัติ <input type="radio" name="gender">
+                                    ไม่อณุมัติ
+                                </form>
+                                <h6 style="text-align: right">ลงชื่อ <input type="text"
+                                        required><br>ลงชื่อคณบดี<br></label><label
+                                        for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                                    <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                                    <br></input>วันที่ <input type="date" required>
+                                </h6>
+                        </div>
+                        <!-- งานเงินรายได้ -->
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <div>
+                            <h6 style="text-align:left"><b>งานเงินรายได้ กองคลัง ชั้น 2
+                                    อาคารอิงคศรีกสิการได้รับชําระเงินจํานวน</b></h6>
+                            <form>
+                                <h6 style="text-align: left"><input type="radio" name="gender"> ภาคเรียนที่ 1 จำนวน
+                                    1,200 บาท
+                                    <input type="radio" name="gender"> ภาคเรียนที่ 2 จำนวน 1,000
+                                    บาท</h2>
+                            </form>
+                            <h6 style="text-align: right">ลงชื่อ <input type="text"
+                                    required><br>ลงชื่อผู้รับเงิน<br></label><label
+                                    for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                                <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                                <br></input>วันที่ <input type="date" required>
+                        </div>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <!-- ส่งเอกสารคําร้องขอลาพักการศึกษาตัวจริง -->
+                        <div>
+                            <h6 style="text-align: left"><b>ส่งเอกสารคําร้องขอลาพักการศึกษาตัวจริง</b><br>
+                                ให้กลุ่มภารกิจทะเบียนฯ ชั้น 2 อาคารอํานวย ยศสุข<br>
+                                เพื่อบันทึกคําร้องขอลาพักการศึกษา และให้นักศึกษา<br>
+                                เก็บหลักฐานใบเสร็จที่ชําระเงินไว้เพื่อตรวจสอบการบันทึก<br>
+                                การลาพักการศึกษา</h6>
+                        </div>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <!-- บันทึกการข้อมูล -->
+                        <div>
+                            <h6 style="text-align:right"><b> สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล
+                                    ได้บันทึกการข้อมูล<b>
+                            </h6>
+                            <h6 style="text-align:right">ได้บันทึกการข้อมูล ดังกล่าวในวันที่ <input type="date"
+                                    required></h6>
+                            <h6 style="text-align: right">ลงชื่อ<input type="text" required><br></label><label
+                                    for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                                <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg">
+                                <br></input>วันที่ <input type="date" required>
+                            </h6>
+                            <br><input class="btn btn-primary" type="submit" value="Submit">
+                        </div>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <!-- คำรับรองของผู้ปกครอง -->
+                        <div class="col">
+                            <h1 style="text-align: center"><b>คํารับรองของผู้ปกครอง</h1>
+                            <h6 style="text-align: right">เขียนที่ บ้านเลขที่ <input type="text" required></h6><br>
+                            <h6 style="text-align: right">หมู่ที่ <input type="text"> ตำบล <input type="text" required>
+                            </h6><br>
+                            <h6 style="text-align: right">อำเภอ <input type="text"> จังหวัด <input type="text" required>
+                            </h6><br>
+                            <h6 style="text-align: right">รหัสไปรษณีย์ <input type="tel" minlength="5" maxlength="5">
+                                เบอร์โทรศัพท์
+                                <input type="tel" minlength="10" maxlength="10"><br>
+                            </h6>
+                            <h6 style="text-align: right">เขียนวันที่ <input type="date" required></h6>
+                            <h6 style="text-align: left;"><b>เรื่อง</b> ยินยอมให้นักศึกษาลาพักการศึกษา ในภาคเรียนที่
+                                <input type="number" min="1" max="3" required>
+                                ปีการศึกษาที่ <input type="tel" minlength="4" maxlength="4" required>
+                            </h6>
+                            <h6 style="text-align: left;"><b>เรียน</b> คณบดีคณะ <input type="text" required></h6>
+                            <h6 style="text-align: left;">ตามที่<input type="radio" name="gender" value="mr"
+                                    checked>นาย<input type="radio" name="gender" value="ms">นางสาว <input type="radio"
+                                    name="gender" value="mrs">นาง ชื่อ <input type="text" name="name" min="1" max="15"
+                                    required> นามสกุล <input type="text" name="name" min="1" max="15" required>
+                                <h6 style="text-align: left;">รหัสนักศึกษา <input type="tel" minlength="10"
+                                        maxlength="10" required>
+                                    โทรศัพท์มือถือ
+                                    <input type="tel" minlength="10" maxlength="10" required>
+                                </h6><br>
+                                <form>
+                                    <h6 style="text-align: left;">หลักสูตร ปริญญาตรี <input type="radio" name="gender">
+                                        4-5
+                                        ปี
+                                        <input type="radio" name="gender"> 4ปีเทียบเข้าเรียน <input type="radio"
+                                            name="gender"> ภาคปกติ <input type="radio" name="gender"> ภาคสมทบ<br>
+                                    </h6>
+                                </form>
+                                <h6 style="text-align: left;"> สาขาวิชา <input type="text"> คณะ <input type="text"
+                                        required><br>
+                                </h6>
+                                <h6 style="text-align: left;">
+                                    ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา
+                                    <br>ในภาคเรียนที่
+                                    <input type="number" min="1" max="3" required>
+                                    ปีการศึกษาที่ <input type="tel" minlength="4" maxlength="4" required>
+                                </h6>
+                                <h6 style="text-align: left;"> เนื่องจาก<br>
+                                    <textarea name="adress" cols="60" rows="10" required></textarea>
+                                </h6>
+                                <form>
+                                    <h6 style="text-align: right">
+                                        ข้าพเจ้า <input type="radio" name="gender" value="mr" checked>นาย<input
+                                            type="radio" name="gender" value="ms">นางสาว <input type="radio"
+                                            name="gender" value="mrs">นาง
+                                        ชื่อ <input type="text" name="name" min="1" max="15" required> นามสกุล <input
+                                            type="text" name="name" min="1" max="15" required>
+                                </form>
+                            </h6>
+                            <h6 style="text-align: right">จึงเรียนมาเพื่อโปรดทราบ</h6>
+                            <h6 style="text-align: right">ขอแสดงความนับถือ<br>
+                                <br></label><label for="avatar">อัพรูปแสดงหลักฐาน(ลายเซ็น)</label>
+                                <input type="file" id="avatar" name="ลายเซ็น" accept="image/png, image/jpeg"><br>
+                                ผู้ปกครองของนักศึกษา<br>
+                                นักศึกษา
+                            </h6>
+                            <!-- ขั้นตอนการเสนอคําร้องลาพักการศึกษา -->
+                            <h6 style="text-align:center"><b><ins>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</ins><br>
+                                    1. นักศึกษากรอกคําร้องขอลาพักการศึกษา<br>
+                                    2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
+                                    3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย
+                                    ยศสุข)<br>
+                                    4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา (คณะที่นักศึกษาสังกัด)<br>
+                                    5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด)<br>
+                                    6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)<br>
+                                    7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ )<br>
+                                    8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว
+                                    (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป<br>
+                                    9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป
+                            </h6>
+                            <button type="button" class="btn btn-success">Success</button>
+                        </div>
+                    </div>
+                </div>
+        </main>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+
+</html>
